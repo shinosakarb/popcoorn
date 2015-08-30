@@ -3,4 +3,5 @@ rvm:
 - 2.2.3
 cache: bundler
 bundler_args: -j4
-script: bundle exec rspec
+before_script:
+  - bundle exec rake db:create db:migrate
