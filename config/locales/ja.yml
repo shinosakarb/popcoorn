@@ -10,3 +10,6 @@ ja:
         start_at: 上映開始時間
         finish_at: 上映終了時間
         hall: ホール
+  time:
+    formats:
+      default: '%Y年 %m月%d日 %H時%M分'
