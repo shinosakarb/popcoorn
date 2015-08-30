@@ -1,7 +1,6 @@
 FactoryGirl.define do
   factory :ticket do
-    schedule nil
-state "MyString"
+    schedule_id 1
+    state "active"
   end
-
 end
