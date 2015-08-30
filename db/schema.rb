@@ -11,6 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20150830024415) do
+
+  create_table "tickets", force: :cascade do |t|
+    t.integer  "schedule_id"
+    t.string   "state"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "tickets", ["schedule_id"], name: "index_tickets_on_schedule_id"
+=======
 ActiveRecord::Schema.define(version: 20150830023840) do
 
   create_table "movies", force: :cascade do |t|
@@ -27,5 +39,6 @@ ActiveRecord::Schema.define(version: 20150830023840) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+>>>>>>> 3a045410b5fe1696a15daaa8728ff35876519aa4
 
 end

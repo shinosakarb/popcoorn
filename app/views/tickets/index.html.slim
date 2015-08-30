@@ -1,0 +1,23 @@
+h1 Listing tickets
+
+table
+  thead
+    tr
+      th Schedule
+      th State
+      th
+      th
+      th
+
+  tbody
+    - @tickets.each do |ticket|
+      tr
+        td = ticket.schedule
+        td = ticket.state
+        td = link_to 'Show', ticket
+        td = link_to 'Edit', edit_ticket_path(ticket)
+        td = link_to 'Destroy', ticket, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Ticket', new_ticket_path
