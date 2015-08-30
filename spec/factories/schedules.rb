@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :schedule do
-    movie {create(:movie)}
+    association :movie
     hall "MyString"
     start_at Time.now
     finish_at Time.now
