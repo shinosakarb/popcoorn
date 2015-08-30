@@ -1,0 +1,12 @@
+
+p
+  | 映画タイトル:
+  = @schedule.movie.title
+p
+  | 上映開始時間:
+  = I18n.l @schedule.start_at
+p
+  | 上映終了時間:
+  = I18n.l @schedule.finish_at
+
+= link_to 'Back', schedules_path

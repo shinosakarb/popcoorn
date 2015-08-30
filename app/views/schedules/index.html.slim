@@ -6,7 +6,7 @@ table
     th= t('activerecord.attributes.schedule.hall')
 - @schedules.each do |schedule|
   tr
-    td= schedule.movie.title
+    td= link_to schedule.movie.title, schedule_path(schedule)
     td= I18n.l schedule.start_at
     td= I18n.l schedule.finish_at
     td= schedule.hall
