@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe Ticket, type: :model do
+describe Ticket do
   describe ".create" do
-    let(:ticket) {FactoryGirl.create(:ticket)}
+    let(:ticket) {create(:ticket)}
 
     example "チケットがあること" do
       expect(ticket.schedule_id).to eq 1
