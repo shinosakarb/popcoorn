@@ -1,0 +1,12 @@
+table
+  tr
+    th 映画タイトル
+    th 上映開始時間
+    th 上映終了時間
+    th ホール
+- @schedules.each do |schedule|
+  tr
+    td= schedule.movie.title
+    td= schedule.start_at.strftime('%Y年 %m月%d日 %H時%M分')
+    td= schedule.finish_at.strftime('%Y年 %m月%d日 %H時%M分')
+    td= schedule.hall
