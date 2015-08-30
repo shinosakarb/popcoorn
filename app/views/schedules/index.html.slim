@@ -6,7 +6,7 @@ table
     th ホール
 - @schedules.each do |schedule|
   tr
-    td= schedule.movie.title
+    td= link_to schedule.movie.title, schedule_path(id: schedule.id)
     td= schedule.start_at.strftime('%Y年 %m月%d日 %H時%M分')
     td= schedule.finish_at.strftime('%Y年 %m月%d日 %H時%M分')
     td= schedule.hall
