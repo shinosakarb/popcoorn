@@ -5,5 +5,3 @@ cache: bundler
 bundler_args: -j4
 before_script:
   - bundle exec rake db:create db:migrate
-script:
-  - bundle exec rspec

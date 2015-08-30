@@ -70,5 +70,7 @@ group :test do
   gem 'capybara'
   gem 'database_rewinder'
   gem 'launchy'
+  gem 'coveralls', require: false
+  gem 'simplecov', require: false
 end
 
