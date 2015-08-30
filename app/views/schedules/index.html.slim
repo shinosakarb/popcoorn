@@ -1,9 +1,9 @@
 table
   tr
-    th 映画タイトル
-    th 上映開始時間
-    th 上映終了時間
-    th ホール
+    th= t('activerecord.attributes.movie.title')
+    th= t('activerecord.attributes.schedule.start_at')
+    th= t('activerecord.attributes.schedule.finish_at')
+    th= t('activerecord.attributes.schedule.hall')
 - @schedules.each do |schedule|
   tr
     td= link_to schedule.movie.title, schedule_path(id: schedule.id)

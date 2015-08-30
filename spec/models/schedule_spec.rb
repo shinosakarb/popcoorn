@@ -5,7 +5,7 @@ describe Schedule do
     create(:schedule)
   end
 
-  it '全件取れること' do
+  example '全件取れること' do
     expect(Schedule.count).to eq(1)
   end
 end
